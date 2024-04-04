@@ -28,7 +28,11 @@ An example of this is [atherosclerosis](https://www.hopkinsmedicine.org/health/c
 Simulating this medical phenomenon is complex because we have to accurately model:
 - the plaque growth,
 - the blodd flow.
-  
+
+<p align="center">
+  <img src="images/atherosclerosis.svg" alt="schematic of atherosclerosis">
+</p>
+</p>  
 This is challenging because the plaque deposition takes place on a scale of weeks, months or even years, while the heart pumps blood through the arteries roughly 1-2 times per second.
 Consequently, we could either simulate both physical phenomena on a scale of seconds (or fractions of a second), we could try to average everything in time (homogeneization) or we could separately solve both physics on their respective time scales (staggered scheme).
 
