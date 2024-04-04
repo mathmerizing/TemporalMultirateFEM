@@ -34,6 +34,22 @@ Simulating this medical phenomenon is complex because we have to accurately mode
 </p>
 </p>  
 This is challenging because the plaque deposition takes place on a scale of weeks, months or even years, while the heart pumps blood through the arteries roughly 1-2 times per second.
-Consequently, we could either simulate both physical phenomena on a scale of seconds (or fractions of a second), we could try to average everything in time (homogeneization) or we could separately solve both physics on their respective time scales (staggered scheme).
+Consequently, we could either simulate both physical phenomena on a scale of seconds (or fractions of a second), we could try to average everything in time (homogeneization) or we could separately solve both physics on their respective time scales (staggered scheme). <br><br>
 
 <u>BUT:</u> Can we also solve both physics at once, while using the respective time scale for each problem? This would be faster than solving everything on the smaller time scale and is more accurate and numerically robsut than using homogenization or using a staggered scheme.
+
+<u>ANSWER:</u> Yes, we can by using restriction matrices (from geometric multigrid) and from one side restrict the temporal matrices that have been assembled on the finer temporal mesh. 
+For more details, please take a closer look at the paper.
+
+## Running the code
+
+### Example 1: Coupled heat and wave equation in 1+1D
+
+### Example 2: Coupled heat and wave equation in 2+1D with fluid source term
+
+### Example 3: Coupled heat and wave equation in 2+1D with solid source term
+
+### Example 4: Poroelasticity in 2+1D: Mandel problem
+
+### Example 5: Poroelasticity in 3+1D: Footing problem
+
