@@ -62,6 +62,14 @@ The code for this example is located in `src/monolithic_heatwave` and is based o
 3. To run the convergence tests from the paper execute `sh run_2d_solid_for_paper.sh` and to analyze the results go to `paper_output_2d_solid` and run `python3 create_convergence_plots.py`.
 
 ### Example 4: Poroelasticity in 2+1D: Mandel problem
+The code for this example is located in `src/monolithic_poroelasticity_mandel` and is based on the FEM library `deal.II 9.3.3`. <br>
+1. To compile the code run `cmake .; make release; make`. <br>
+2. To run the convergence tests from the paper execute `sh run_mandel_for_paper.sh`.
 
 ### Example 5: Poroelasticity in 3+1D: Footing problem
+The code for this example is located in `src/monolithic_poroelasticity_footing` and is based on the FEM library `deal.II 9.3.3`. <br>
+1. To compile the code run `cmake .; make release; make`. <br>
+2. To run the convergence tests from the paper execute `sh run_footing_for_paper.sh`.
+
+### BONUS: Example 6: Staggered scheme for poroelasticity in 2+1D: Mandel problem
 
