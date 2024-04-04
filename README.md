@@ -32,7 +32,6 @@ Simulating this medical phenomenon is complex because we have to accurately mode
 <p align="center">
   <img src="images/atherosclerosis.svg" alt="schematic of atherosclerosis">
 </p>
-</p>  
 This is challenging because the plaque deposition takes place on a scale of weeks, months or even years, while the heart pumps blood through the arteries roughly 1-2 times per second.
 Consequently, we could either simulate both physical phenomena on a scale of seconds (or fractions of a second), we could try to average everything in time (homogeneization) or we could separately solve both physics on their respective time scales (staggered scheme). <br><br>
 
@@ -72,4 +71,8 @@ The code for this example is located in `src/monolithic_poroelasticity_footing` 
 2. To run the convergence tests from the paper execute `sh run_footing_for_paper.sh`.
 
 ### BONUS: Example 6: Staggered scheme for poroelasticity in 2+1D: Mandel problem
+To solve this temporal multirate problems more efficiently, one could use geometric multigrid in time, use the staggered scheme as a preconditioner for the monolithic scheme or directly solve the staggered scheme as shown below for the Mandel problem where for each displacement (`u`) temporal element we have two pressure (`p`) temporal elements.
 
+<p align="center">
+  <img src="images/staggered_multirate_Mandel.png" alt="staggered scheme">
+</p>
