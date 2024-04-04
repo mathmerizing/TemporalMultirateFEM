@@ -76,3 +76,7 @@ To solve this temporal multirate problems more efficiently, one could use geomet
 <p align="center">
   <img src="images/staggered_multirate_Mandel.png" alt="staggered scheme">
 </p>
+
+The code for this example is located in `src/staggered_poroelasticity_mandel` and is based on the FEM library `FEniCS`. <br>
+1. To run the convergence tests execute `sh run_Mandel_tests.sh`. <br>
+2. To analyze the results execute `python3 analyze_Mandel_tests.py`.
