@@ -27,7 +27,7 @@ We are often dealing with multiphysics problems that have dynamics on different 
 An example of this is [atherosclerosis](https://www.hopkinsmedicine.org/health/conditions-and-diseases/atherosclerosis), where plaque deposits on the walls of a human's arteries and then reduces blood flow, possibly even causing heart attacks or strokes.
 Simulating this medical phenomenon is complex because we have to accurately model:
 - the plaque growth,
-- the blodd flow.
+- the blood flow.
 
 <p align="center">
   <img src="images/atherosclerosis.svg" alt="schematic of atherosclerosis">
