@@ -44,10 +44,22 @@ For more details, please take a closer look at the paper.
 ## Running the code
 
 ### Example 1: Coupled heat and wave equation in 1+1D
+The code for this example is located in `src/monolithic_heatwave` and is based on the FEM library `deal.II 9.3.3`. <br>
+1. Go to `main.cc` and make sure that `#  define DIM 1`. <br>
+2. To compile the code run `cmake .; make release; make; mv main main_1d`. <br>
+3. To run the convergence tests from the paper execute `sh run_1d_for_paper.sh` and to analyze the results go to `paper_output_1d` and run `python3 create_convergence_plots.py`.
 
 ### Example 2: Coupled heat and wave equation in 2+1D with fluid source term
+The code for this example is located in `src/monolithic_heatwave` and is based on the FEM library `deal.II 9.3.3`. <br>
+1. Go to `main.cc` and make sure that `#  define DIM 2` and `#  define SOLID_SOURCE false`. <br>
+2. To compile the code run `cmake .; make release; make; mv main main_2d`. <br>
+3. To run the convergence tests from the paper execute `sh run_2d_for_paper.sh` and to analyze the results go to `paper_output_2d` and run `python3 create_convergence_plots.py`.
 
 ### Example 3: Coupled heat and wave equation in 2+1D with solid source term
+The code for this example is located in `src/monolithic_heatwave` and is based on the FEM library `deal.II 9.3.3`. <br>
+1. Go to `main.cc` and make sure that `#  define DIM 2` and `#  define SOLID_SOURCE true`. <br>
+2. To compile the code run `cmake .; make release; make; mv main main_2d_solid`. <br>
+3. To run the convergence tests from the paper execute `sh run_2d_solid_for_paper.sh` and to analyze the results go to `paper_output_2d_solid` and run `python3 create_convergence_plots.py`.
 
 ### Example 4: Poroelasticity in 2+1D: Mandel problem
 
